@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promise Day ♾️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:
+    linear-gradient(rgba(248,242,235,.92),rgba(248,242,235,.92)),
+    url("bg.jpg") center/cover no-repeat;
+  color:#4b3f3f;
+  overflow-x:hidden;
+}
+
+/* Sections */
+section{
+  padding:100px 20px;
+  text-align:center;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* HERO */
+.hero h1{
+  font-family:'Playfair Display';
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero h2{
+  font-weight:300;
+  font-size:18px;
+}
+
+.heart{
+  width:160px;
+  margin-top:40px;
+  animation:beat 1.5s infinite;
+  filter:drop-shadow(0 0 25px rgba(212,154,137,.6));
+}
+
+@keyframes beat{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.08);}
+}
+
+/* CARDS */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  justify-content:center;
+}
+
+.card{
+  background:white;
+  width:280px;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,.07);
+  transition:.4s;
+  text-align:left;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card h3{
+  font-family:'Playfair Display';
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.reveal{
+  margin-top:15px;
+  padding:8px 18px;
+  border:none;
+  border-radius:25px;
+  background:#d49a89;
+  color:white;
+  cursor:pointer;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.promise-text{
+  display:none;
+  margin-top:20px;
+  font-size:14px;
+  line-height:1.8;
+  animation:fadeSlide .5s ease forwards;
+}
+
+@keyframes fadeSlide{
+  from{opacity:0; transform:translateY(-10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* RING */
+.ring{
+  width:180px;
+  cursor:pointer;
+  transition:.4s;
+  filter:drop-shadow(0 0 20px rgba(212,154,137,.6));
+}
+
+.ring.glow{
+  transform:scale(1.1);
+  filter:drop-shadow(0 0 50px rgba(212,154,137,1));
+}
+
+/* Floating Emojis */
+.float{
+  position:fixed;
+  font-size:18px;
+  animation:floatUp 6s linear;
+  pointer-events:none;
+  opacity:.9;
+}
+
+@keyframes floatUp{
+  from{
+    transform:translateY(0);
+    opacity:1;
+  }
+  to{
+    transform:translateY(-90vh);
+    opacity:0;
+  }
+}
+
+/* Music Button */
+.music-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#d49a89;
+  border:none;
+  padding:12px 18px;
+  border-radius:30px;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+</style>
+</head>
+
+<body>
+
+<!-- STAGE A -->
+<section class="hero">
+  <h1>Today Is Promise Day</h1>
+  <h2>And I want to make some promises to you Nannuu ♾️🫴🏽</h2>
+  <img src="heart.png" class="heart">
+</section>
+
+<!-- STAGE B -->
+<section>
+  <h1 style="font-family:'Playfair Display';margin-bottom:50px;">
+    Three Sacred Promises
+  </h1>
+
+  <div class="cards">
+
+    <!-- TRUST -->
+    <div class="card">
+      <h3>Trust 🛡️</h3>
+      <button class="reveal" onclick="togglePromise(this)">Reveal Promise</button>
+      <div class="promise-text">
+Today 🥺🥺🫴🏽 I promise you , that you can always and forever Trust me with your Heart  your soul  and your love.   I'll never Break your heart , never hurt your soul , And I'll always be Loyal to your loveeee bubbyy, You can Trust me To share your feelings with me , Share your thoughts with me , Share your Happiness with me   , I promise to be a Trust worthy Shoulder on which you can keep your head on and forget about all the Worries and Troubles of this world I really love you.   Thank you so much for trusting me enough to make me your Shohar 🥺🥺🥺♾️♾️♾️
+      </div>
+    </div>
+
+    <!-- CARE -->
+    <div class="card">
+      <h3>Care 🤍</h3>
+      <button class="reveal" onclick="togglePromise(this)">Reveal Promise</button>
+      <div class="promise-text">
+Today I promise Ki main aaapkaaaa puri Zindagi bhr khaayal rakhunga.  , khayaal rkhung aapki ek ek choti se choti khushi kaaa,  khayaal rkhunga aapki feelings kaa, khayal rkhunga aapki aankhon se se aansu naaa aayeee. Khyaaal rakhunga ki kabhi Akela feeel na ho , khayaal rkhunga ki Zindagi me aisa koi mod naa aane du jhaaa meri hi wjh se aapki takleef aur b badh jaaye, khayaaal rkhunga ki aaapki zindgi ki har ek tension ko har ek dukh taklifon ko ukhad ke fenk du , khyaal rkhunga ki m sirf aapka hi raahu aaur aap sirf meere , khayaal rkhunga ki kabhi mera pyaar aapke liye kam naa ho , khyaal rakhunga kabhi Dil mat dukhau 
+Halaki m already dukhata hu but 
+I'll care , I'll take care of each and everything 🥺🥺🥺🥺🥺🫴🏽🥺🥺🥺🥺🥺🥺🥺🥺 Please keep forgiving me 
+      </div>
+    </div>
+
+    <!-- FOREVER -->
+    <div class="card">
+      <h3>Forever ♾️</h3>
+      <button class="reveal" onclick="togglePromise(this)">Reveal Promise</button>
+      <div class="promise-text">
+Today I promise that I'll stay forever with you,  I'll love you forever. I'll keep you happy forever, I'll make you feel special forever, I'll Be with you forever, I'll make you ghool ghool in love forever, I'll give you butterflies forever, I'll make each and every day special forever ♾️ 🫴🏽 ♾️ ♾️ ♾️ I promise to Make you and keep you Mine forever ♾️ 
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STAGE C -->
+<section>
+  <h1 style="font-family:'Playfair Display';margin-bottom:30px;">
+    A Promise Without End
+  </h1>
+  <img src="ring.png" class="ring" onclick="activateRing()">
+</section>
+
+<!-- MUSIC -->
+<audio id="music" src="song.mp3" loop></audio>
+<button class="music-btn" onclick="playMusic()">Tap to Play Music 🎵</button>
+
+<script>
+
+/* Reveal Fix */
+function togglePromise(btn){
+  const text = btn.nextElementSibling;
+
+  if(text.style.display === "block"){
+    text.style.display = "none";
+  } else {
+    text.style.display = "block";
+  }
+}
+
+/* Ring Interaction */
+function activateRing(){
+  const ring = document.querySelector(".ring");
+  ring.classList.add("glow");
+
+  let duration = 6000;
+  let interval = setInterval(() => {
+
+    const el = document.createElement("div");
+    el.className = "float";
+    el.innerText = Math.random() > 0.5 ? "💖" : "I love you";
+    el.style.left = Math.random() * 100 + "vw";
+    el.style.top = "85vh";
+    document.body.appendChild(el);
+
+    setTimeout(() => {
+      el.remove();
+    }, 6000);
+
+  }, 400);
+
+  setTimeout(() => {
+    clearInterval(interval);
+  }, duration);
+}
+
+/* Music */
+function playMusic(){
+  document.getElementById("music").play();
+  document.querySelector(".music-btn").innerText="Playing ♫";
+}
+</script>
+
+</body>
+</html>
